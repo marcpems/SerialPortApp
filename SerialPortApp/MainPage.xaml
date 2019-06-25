@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="SerialPortApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SerialPortApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock Text="This sample contains two UWP apps that show how to open a COM port and send / receive data from UWP app"/>
+        <TextBlock Text="The send app (this app) will connect to COM4 and send date + time"/>
+        <TextBlock Text="The read app will connect to COM3 and listen for data which is shown in a list"/>
+        <TextBlock Text=" "/>
+        <TextBlock Text="Instructions for this sample: "/>
+        <TextBlock Text="1> Setup virtual COM ports COM3 and COM4, join them using a virtual serial port connector app"/>
+        <TextBlock Text="2> Run the ReadApp"/>
+        <TextBlock Text="3> In the ReadApp press the Start button in the system tray"/>
+        <TextBlock Text="4> In this app (Serial Port App) press the 'Send Current time button' "/>
+        <TextBlock Text="The current time will be dislayed in the ReadApp, once per press"/>
+        <Button Margin="0,20" Content="Send current time to virtual COM port 'COM4'"
+                Click="SeralButton2_Click" />
+    </StackPanel>
+</Page>
